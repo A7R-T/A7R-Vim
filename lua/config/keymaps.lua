@@ -7,7 +7,8 @@ vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Hover documentation' })
 vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { desc = 'Signature help' })
 vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Rename symbol' })
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = 'Code actions' })
-vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format { async = true } end, { desc = 'Format buffer' })
+vim.keymap.set('n', '<leader>f', function() require("conform").format() end, { desc = 'Format buffer' })
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Show diagnostics' })
 
 -- Plugin keymaps
 vim.keymap.set('n', '<leader>e', '<cmd>Neotree toggle<cr>', { desc = 'Toggle file explorer' })
@@ -20,3 +21,9 @@ vim.keymap.set('n', '<leader>gb', '<cmd>GitBlameToggle<cr>', { desc = 'Toggle gi
 -- General keymaps
 vim.keymap.set('n', '<leader>w', '<cmd>w<cr>', { desc = 'Save' })
 vim.keymap.set('n', '<leader>q', '<cmd>q<cr>', { desc = 'Quit' })
+
+-- Move current line or selection up in Normal and Visual modes
+vim.keymap.set({"n", "v"}, "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
+-- Move current line or selection down in Normal and Visual modes
+vim.keymap.set({"n", "v"}, "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
+
