@@ -27,3 +27,5 @@ vim.keymap.set({"n", "v"}, "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
 -- Move current line or selection down in Normal and Visual modes
 vim.keymap.set({"n", "v"}, "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
 
+--mapping the leader+q to the esc key
+vim.keymap.set({"n", "i", "v", "t"}, "<A-q>", "<Esc>", { noremap = true, silent = true })
