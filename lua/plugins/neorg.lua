@@ -12,10 +12,16 @@ return {
       config = {
         workspaces = {
           A7R = "~/A7R/A7R-SB", -- Workspace name = Path
+          Dynamics = "~/A7R/A7R-SB/7-Dynamics",
         },
         index = "index.norg", -- Name of the root index file
       },
     },
+    ["core.journal"] = {
+            config = {
+              journal_folder = "7-days",
+            },
+          },
     -- Other modules like core.summary, core.concealer etc.
   },
 }

@@ -13,6 +13,7 @@ vim.cmd("highlight EndOfBuffer guibg=NONE ctermbg=NONE")
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
     require("config.colors")
+    require("config.theme-watcher")
   end
 })
 

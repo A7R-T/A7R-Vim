@@ -22,3 +22,4 @@ vim.opt.updatetime = 50
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.clipboard = "unnamedplus"
+vim.opt.conceallevel = 3 -- Or 3 for more aggressive concealment
