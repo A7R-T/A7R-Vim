@@ -19,7 +19,8 @@ return {
     },
     ["core.journal"] = {
             config = {
-              journal_folder = "7-days",
+              workspace = "Dynamics",
+              journal_folder = "7-trackers",
             },
           },
     -- Other modules like core.summary, core.concealer etc.

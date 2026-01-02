@@ -17,7 +17,8 @@ vim.keymap.set('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', { desc = 'Live
 vim.keymap.set('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { desc = 'Find buffers' })
 vim.keymap.set('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', { desc = 'Help tags' })
 vim.keymap.set('n', '<leader>gb', '<cmd>GitBlameToggle<cr>', { desc = 'Toggle git blame' })
-vim.keymap.set("n", "<Leader>d", ":Neorg journal today<CR>", { desc = "Open daily journal in Neorg" })
+vim.keymap.set("n", "<Leader>j", ":Neorg journal today<CR>", { desc = "Open daily journal in Neorg" })
+vim.keymap.set("n", "<Leader>a", ":Neorg workspace A7R<CR>", { desc = "opens my A7R workspace"})
 
 -- General keymaps
 vim.keymap.set('n', '<leader>w', '<cmd>w<cr>', { desc = 'Save' })
