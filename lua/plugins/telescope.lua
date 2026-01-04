@@ -181,12 +181,13 @@ return {
           
           project = {
             base_dirs = {
-              '~/Documents',
+              -- '~/Documents',
               '~/Downloads',
-              '~/Projects',
-              '~/workspace',
-              '~/src',
+              -- '~/Projects',
+              -- '~/workspace',
+              -- '~/src',
               '~/.config',
+              '~/A7R'
             },
             hidden_files = true,
           },
